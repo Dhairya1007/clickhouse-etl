@@ -14,7 +14,6 @@ import (
 
 type subjectRouter interface {
 	Subject(msg []byte) string
-	Type() models.RoutingType
 }
 
 // BatchWriter implements batch.BatchWriter interface for NATS JetStream with async publishing
